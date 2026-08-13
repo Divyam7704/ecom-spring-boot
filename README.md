@@ -5,7 +5,7 @@ A RESTful e-commerce backend built with Spring Boot, featuring product managemen
 ## Tech Stack
 - Java, Spring Boot
 - Spring Data JPA
-- H2 Database (development)
+- MySQL Database
 - Lombok
 
 ## Features
@@ -26,9 +26,15 @@ A RESTful e-commerce backend built with Spring Boot, featuring product managemen
 
 ## How to Run
 1. Clone the repo
-2. Open in IntelliJ IDEA
-3. Run EcomProjApplication.java
-4. Test endpoints using Postman
+2. Create a MySQL database:
+```sql
+   CREATE DATABASE ecommerce_db;
+```
+3. Copy `src/main/resources/application.properties.example` to `src/main/resources/application.properties`
+4. Set the `DB_PASSWORD` environment variable to your MySQL root password
+5. Open in IntelliJ IDEA
+6. Run EcomProjApplication.java
+7. Test endpoints using Postman
 
 ## Status
-In Progress - adding Spring Security/JWT, MySQL, and deployment
+In Progress - adding Spring Security/JWT and deployment
